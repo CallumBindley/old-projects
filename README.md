@@ -14,11 +14,13 @@ A short 1-2 sentence description of the project.
 
 ## About      
 - ### Description
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo elit. Sed scelerisque consectetur rutrum. Vestibulum erat ante, tincidunt quis porttitor vitae, efficitur non massa. Morbi pharetra tempus lacus. Nunc efficitur ante erat, id sodales est rhoncus sollicitudin. Nullam eget magna vel dolor mattis iaculis. Morbi sit amet magna est. Sed interdum eu nisl ut gravida. Maecenas nec lectus quis lorem convallis semper.
+    An archive of old projects. No longer worked on or used. Useful for reference.
 
 - ### How to Use
-    Description of how to use the project with demonstrated examples.
-    Where possible use a gif or link to a video showing it. 
+    When adding a project to the archive:
+    1. Update the table of contents above by adding the project title under "Projects"
+    2. Add the project name and a short summary in the "Projects" section below
+    3. Ensure the archived project has a readme inside it's folder describing the project in detail
 
 
 ## Projects
