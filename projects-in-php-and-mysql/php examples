@@ -1,0 +1,184 @@
+<?php
+    
+    $heading = 'Heading';
+    
+?>
+
+<h1><?php $heading; ?></h1>
+
+
+-----------------------------------------
+
+<?php   
+    
+    $user = array ('first_name'=>'Bob','last_name'=>'Banana','email'=>'Orange@email.com');
+    $fruits = array('apple','orange','grapes');
+?>
+
+<h1><?php echo $fruits[1]; ?></h1>
+<h1><?php echo $user['first_name']; ?></h1>
+
+
+----------------------------------------
+
+<?php
+    
+    $fruits = array('apple','orange','grapes');
+
+    foreach ($fruits as $fruit) {
+        echo $fruit.'<br>';
+    }
+
+?>
+
+<ul>
+    <?php foreach ($fruits as $fruit) : ?>
+        <li><?php echo $fruit.'<br>'; ?></li>
+    <?php endforeach; ?>
+</ul>
+
+--------------------------------------
+
+<?php
+    
+    $users = array ('first name'=>'Bob','last name'=>'Banana','email'=>'Orange@email.com');
+
+?>
+
+
+<ul>
+    <?php foreach ($users as $key => $value) : ?>
+        <li><?php echo $key; ?> : <?php echo $value; ?></li>
+    <?php endforeach; ?>
+</ul>
+
+---------------------------------------
+
+<?php
+
+    $x = 1;
+    
+    if ($x == 2) {
+        echo 'YES';
+    }else {
+        echo 'NO';
+    }
+
+?>
+
+
+---------------------------------------
+
+
+<?php
+    
+    function sayHello(){
+
+        echo 'Hello World';
+
+    }
+
+    sayHello();
+
+    function sayIt($words){
+
+        echo $words;  
+          
+    }
+
+    sayIt("Hello Again")
+
+?>
+
+
+---------------------------------------
+
+
+<?php 
+    //Create SELECT query 
+    $query = "SELECT * FROM shouts;"
+
+    //Variable to hold the results of the quesry
+    $shouts = mysqli_query($con, $query);
+
+ 
+?>
+
+// loops through the $shouts variable holding an array of key/value pairs from the database  
+// while there is still rows in the database that match the query stored in $shouts 
+
+<?php while($row = mysqli_fetch_assoc($shouts)) : ?>
+    <li class="shout"> <span> <?php echo $row['time']?> - </span> <strong><?php echo $row['user']?> : </strong> <?php echo $row['message']?></li>
+<?php endwhile;?>
+
+
+
+// Same as doing this below but using a database to pull the stored information
+
+<li class="shout"><span>10:15PM - </span> Brad: Hey what are you guys up to?</li>
+<li class="shout"><span>10:15PM - </span> Brad: Hey what are you guys up to?</li>
+<li class="shout"><span>10:15PM - </span> Brad: Hey what are you guys up to?</li>
+
+
+
+
+-------------------------------------  testing inputs from a from
+
+<div id="input">
+    <form method="post" action="process.php">
+        <input type="text" name="user" placeholder="Enter Your Name" />
+        <input type="text" name="message" placeholder="Enter A Message"/>
+        <br/>
+        <input class="shout-btn" type="submit" name="submit" value="Shout It Out"/>
+    </form>
+</div>
+
+
+// Inside process.php file
+
+<?php 
+
+include 'database.php';
+
+//check if form submitted
+if(isset($_POST['submit'])){
+
+    $user = mysqli_real_escape_string($con, $_POST['user']);
+    $message = mysqli_real_escape_string($con, $_POST['message']);
+
+    //Set timezone
+    date_default_timezone_set('America/New_York');
+    $time = date('h:i:s a', time());
+
+    //validate input
+    if(!isset($user) || $user = '' || !isset($message) || $message == ''){
+
+        echo 'bad';
+
+    }else{
+
+        $query
+
+    }
+}
+
+/*
+-when someone clicks the submit button on the form, the inputed data is sent with the HTTP POST method to process.php file
+-the HTTP POST method sends a message with key/value pair like :
+
+POST / HTTP/1.1
+Host: foo.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 13
+user=John&message=Mom     <<<< content-type
+
+-in process.php the submit button is checked to see if it is null or not with isset
+- $_POST[] is php specific and is an associative array (key/value pairs) passed to 
+  the current script via HTTP POST method which contains the HTTP content-type in the request aka user=John&message=Mom
+- So $_POST['user'] = eg John
+- then it checks the connected database for the current character Set which is why $con is needed 
+  ($con = mysqli_connect("localhost","root", "", "shoutit");)
+- then it escapes any special characters used in the query according to that connection
+- stores it in a variable
+
+*/
