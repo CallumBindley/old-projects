@@ -35,7 +35,7 @@ When adding a project to the archive:
 	https://www.codecademy.com/
 
 - ### mozilla-developer-network-tutorials
-	2D breakout game tutorials from mozilla developer network tutorials<br>
+	2D breakout game tutorial from mozilla developer network tutorials<br>
 	https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
 
 - ### projects-in-php-and-mysql
@@ -44,7 +44,7 @@ When adding a project to the archive:
 	https://www.udemy.com/course/the-complete-web-development-course-learn-by-building-apps/
 
 - ### treehouse-tutorials
-	Various excercises from team tree house<br>
+	Various excercises from team treehouse<br>
 	https://teamtreehouse.com/
 
 
