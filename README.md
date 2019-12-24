@@ -6,7 +6,10 @@ An archive of old projects. No longer worked on or used. Useful for reference.
 
 - [How to use](#How-to-use)
 - [Projects](#Projects)
-    - [Project name](#Project-name)
+    - [17-beginner-csharp-walkthrough-projects](#17-beginner-csharp-walkthrough-projects)
+	- [codecademy-projects](#codecademy-projects)
+	- [projects-in-php-and-mysql](#projects-in-php-and-mysql)
+	- [treehouse-tutorials](#treehouse-tutorials)
 - [License](#License)
 - [Links](#Links)
 
@@ -16,12 +19,31 @@ An archive of old projects. No longer worked on or used. Useful for reference.
 When adding a project to the archive:
 1. Update the table of contents above by adding the project title under "Projects"
 2. Add the project name and a short summary in the "Projects" section below
-3. Ensure the archived project has a readme inside it's folder describing the project in detail
+3. Ensure the archived project has a readme inside it's folder describing the project in detail 
 
 
 ## Projects
-- ### Project name
-    Project Description
+- ### 17-beginner-csharp-walkthrough-projects
+    Learn how to code in C# by building 17 projects<br>
+	By Bluelime Learning Solutions<br>
+	https://www.udemy.com/course/17-beginner-c-walkthrough-projects-step-by-step/
+
+- ### codecademy-projects
+	Various excercises from  Codecademy<br>
+	Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages<br>
+	https://www.codecademy.com/
+
+
+- ### projects-in-php-and-mysql
+	Master PHP-MySQL by Building 10 Projects<br>
+	By Eduonix Learning Solutions<br>
+	https://www.udemy.com/course/the-complete-web-development-course-learn-by-building-apps/
+
+
+- ### treehouse-tutorials
+	Various excercises from team tree house<br>
+	https://teamtreehouse.com/
+
 
 ## License
 This project is free to use under the terms of the [MIT](LICENSE.md) license.
