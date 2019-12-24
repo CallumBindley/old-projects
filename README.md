@@ -8,6 +8,7 @@ An archive of old projects. No longer worked on or used. Useful for reference.
 - [Projects](#Projects)
     - [17-beginner-csharp-walkthrough-projects](#17-beginner-csharp-walkthrough-projects)
 	- [codecademy-projects](#codecademy-projects)
+    - [mozilla-developer-network-tutorials](#mozilla-developer-network-tutorials)
 	- [projects-in-php-and-mysql](#projects-in-php-and-mysql)
 	- [treehouse-tutorials](#treehouse-tutorials)
 - [License](#License)
@@ -33,12 +34,14 @@ When adding a project to the archive:
 	Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages<br>
 	https://www.codecademy.com/
 
+- ### mozilla-developer-network-tutorials
+	2D breakout game tutorials from mozilla developer network tutorials<br>
+	https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
 
 - ### projects-in-php-and-mysql
 	Master PHP-MySQL by Building 10 Projects<br>
 	By Eduonix Learning Solutions<br>
 	https://www.udemy.com/course/the-complete-web-development-course-learn-by-building-apps/
-
 
 - ### treehouse-tutorials
 	Various excercises from team tree house<br>
@@ -47,6 +50,3 @@ When adding a project to the archive:
 
 ## License
 This project is free to use under the terms of the [MIT](LICENSE.md) license.
-
-
-
