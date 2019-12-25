@@ -33,6 +33,12 @@ When adding a project to the archive:
 	Various excercises from  Codecademy<br>
 	Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages<br>
 	https://www.codecademy.com/
+   
+- ### codecombat
+	Various excercises from codecombat<br>
+	CodeCombat is an educational video game for learning software programming concepts and languages
+	https://codecombat.com/
+
 
 - ### mozilla-developer-network-tutorials
 	2D breakout game tutorial from mozilla developer network tutorials<br>
